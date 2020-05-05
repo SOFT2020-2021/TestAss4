@@ -5,7 +5,7 @@ We have chosen to use postman as our dedicated REST test tool.
 Resources used by our frontend, which are subjects for our tests
 * [Account Resource](https://github.com/SOFT2020-2021/TestAss4/blob/master/src/main/java/ResourceLayer/Accounts.java)
 * [Transaction Resource](https://github.com/SOFT2020-2021/TestAss4/blob/master/src/main/java/ResourceLayer/Transactions.java)
-* [User Resource](https://github.com/SOFT2020-2021/TestAss4/blob/master/src/main/java/ResourceLayer/Users.java)
+* [Customer Resource](https://github.com/SOFT2020-2021/TestAss4/blob/master/src/main/java/ResourceLayer/Customers.java)
 
 Below is our exported tests. 
 
