@@ -1,4 +1,4 @@
-package Bank;
+package ResourceLayer;
 
 import businessLayer.controllers.TransactionController;
 import contract.JSON;
@@ -9,7 +9,6 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
-import java.awt.*;
 import java.io.IOException;
 
 @Path("Transactions")
