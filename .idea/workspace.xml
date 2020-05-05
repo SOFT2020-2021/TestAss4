@@ -7,14 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e113e18-6cac-4e9c-bd9c-27d30b43a86e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ResourceLayer/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ResourceLayer/Accounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ResourceLayer/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ResourceLayer/Customers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataLayer/performers/AccountPerformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataLayer/performers/AccountPerformer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +118,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28318584" />
@@ -329,7 +327,7 @@
       <updated>1588589166333</updated>
       <workItem from="1588589169710" duration="4960000" />
       <workItem from="1588669505043" duration="23342000" />
-      <workItem from="1588711470328" duration="2377000" />
+      <workItem from="1588711470328" duration="3289000" />
     </task>
     <servers />
   </component>
@@ -421,6 +419,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="987" y="334" width="586" height="732" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588673903739" />
+    <state x="657" y="253" key="run.anything.popup" timestamp="1588718099990">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="657" y="253" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1588718099990" />
     <state x="750" y="264" width="672" height="510" key="search.everywhere.popup" timestamp="1588717887077">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

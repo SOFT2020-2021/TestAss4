@@ -11,9 +11,7 @@ import dataLayer.entitites.Account;
 import dataLayer.entitites.MyBank;
 import dataLayer.entitites.User;
 import dataLayer.performers.AccountPerformer;
-
 import java.util.HashMap;
-import java.util.List;
 
 public class AccountController implements EntityController<AccountTransferable> {
 

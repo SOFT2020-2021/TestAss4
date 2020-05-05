@@ -14,9 +14,9 @@ public class Customers {
     @Produces(MediaType.APPLICATION_JSON)
     public Response getIt() {
         try {
-            CustomerController temp = new CustomerController();
-            String temp2 = temp.getAllCustomersID();
-            return Response.status(200).entity(temp2).build();
+            CustomerController cc = new CustomerController();
+            String customerIdsJSON = cc.getAllCustomersID();
+            return Response.status(200).entity(customerIdsJSON).build();
         }
         catch(Exception E){
             return Response.status(500).entity("Something went wrong").build();
@@ -25,12 +25,11 @@ public class Customers {
 
 
     @GET
-    @Path("{id}")
+    @Path("{cpr}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getUserById(@PathParam("id") String id) {
-        CustomerController customertemp = new CustomerController();
-        //customertemp.getOne();
-        return Response.status(200).entity("getUserById is called, id : " + id).build();
+    public Response getUserById(@PathParam("cpr") String cpr) {
+        CustomerController cc = new CustomerController();
+        return Response.status(200).entity(cc.getOne(cpr)).build();
 
     }
 }

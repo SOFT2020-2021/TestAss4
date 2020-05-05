@@ -16,9 +16,9 @@ public class Accounts {
     @Produces(MediaType.APPLICATION_JSON)
     public Response getIt(@PathParam("cpr") String cpr) {
         try {
-            AccountController temp = new AccountController();
-            String temp2  = temp.getAccountsByCustomerID(cpr);
-            return Response.status(200).entity(temp2).build();
+            AccountController ac = new AccountController();
+            String accountsJSON  = ac.getAccountsByCustomerID(cpr);
+            return Response.status(200).entity(accountsJSON).build();
         }
         catch(Exception E){
             return Response.status(500).entity("Something went wrong").build();

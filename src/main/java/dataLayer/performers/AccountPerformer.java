@@ -1,14 +1,9 @@
 package dataLayer.performers;
 
-import contract.transferables.SimpleAccountTransferable;
 import dataLayer.DAO;
 import dataLayer.entitites.Account;
-import dataLayer.entitites.User;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
 
 public class AccountPerformer {
 
