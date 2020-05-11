@@ -1,6 +1,6 @@
 package businessLayer;
 
-import Exceptions.AccountNotFoundException;
+import exceptions.AccountNotFoundException;
 import dataLayer.entitites.Account;
 import dataLayer.entitites.MyBank;
 import org.junit.After;

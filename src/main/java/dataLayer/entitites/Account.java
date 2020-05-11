@@ -1,6 +1,6 @@
 package dataLayer.entitites;
 
-import Exceptions.AccountNotFoundException;
+import exceptions.AccountNotFoundException;
 import businessLayer.Bank;
 import businessLayer.Customer;
 

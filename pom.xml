@@ -23,6 +23,13 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/java/resourceLayer</directory>
+            </resource>
+        </resources>
+
     </build>
 
     <dependencyManagement>
@@ -38,40 +45,48 @@
     </dependencyManagement>
 
     <dependencies>
+
+        <!-- Servlets, we use it to run on tomcat startup to initialize the correct databases -->
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet-core</artifactId>
-            <!-- use the following artifactId if you don't need servlet 2.x compatibility -->
-            <!-- artifactId>jersey-container-servlet</artifactId -->
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.inject</groupId>
             <artifactId>jersey-hk2</artifactId>
         </dependency>
-        <!-- uncomment this to get JSON support
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-binding</artifactId>
-        </dependency>
-        -->
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
+
+        <!-- Servlets, we use it to run on tomcat startup to initialize the correct databases -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Servlets, we use it to run on tomcat startup to initialize the correct databases -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <version>3.3.3</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Servlets, we use it to run on tomcat startup to initialize the correct databases -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.2.12</version>
         </dependency>
+
+        <!-- Servlets, we use it to run on tomcat startup to initialize the correct databases -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
     <properties>

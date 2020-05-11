@@ -1,6 +1,6 @@
 package businessLayer;
 
-import Exceptions.AccountNotFoundException;
+import exceptions.AccountNotFoundException;
 import dataLayer.entitites.Account;
 
 public interface Bank {

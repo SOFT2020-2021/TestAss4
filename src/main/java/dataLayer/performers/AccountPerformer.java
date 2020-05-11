@@ -1,31 +1,33 @@
 package dataLayer.performers;
 
+import contract.transferables.SimpleAccountTransferable;
 import dataLayer.DAO;
 import dataLayer.entitites.Account;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AccountPerformer {
 
-    public void transferMoney (int sender, int receiver, long amount) throws Exception{
-        //get amount on sender account, if < amount
+    public void transferMoney (long sender, long receiver, long amount) throws Exception{
 
         PreparedStatement ps = DAO.connection.prepareStatement("SELECT balance FROM accounts WHERE id = ?");
-        ps.setInt(1,sender);
+        ps.setLong(1, sender);
         ResultSet rs = ps.executeQuery();
 
         if(rs.next()){
-            if(rs.getInt(1) >= amount) {
+            if(rs.getLong(1) >= amount) {
                 ps = DAO.connection.prepareStatement(
                         "UPDATE accounts SET balance = balance + ? WHERE id = ?");
                 ps.setLong(1, amount);
-                ps.setInt(2, receiver);
+                ps.setLong(2, receiver);
                 ps.executeUpdate();
 
                 ps = DAO.connection.prepareStatement(
                         "UPDATE accounts SET balance = balance - ? WHERE id = ?");
                 ps.setLong(1, amount);
-                ps.setInt(2, sender);
+                ps.setLong(2, sender);
                 ps.executeUpdate();
 
             }
@@ -91,7 +93,7 @@ public class AccountPerformer {
         }
     }
 
-    public List<SimpleAccountTransferable> getAllAcountsForCustomer (String customer) throws Exception{
+    public List<SimpleAccountTransferable> getAllAccountsForCustomer (String customer) throws Exception{
         List<SimpleAccountTransferable> accounts = new ArrayList<SimpleAccountTransferable>();
         PreparedStatement ps = DAO.connection.prepareStatement("SELECT * FROM accounts where customerCpr = ? ;");
         ps.setString(1, customer);
@@ -104,4 +106,10 @@ public class AccountPerformer {
         ps.close();
         return accounts;
     }
+
+    /*public static void main(String[] args) throws Exception {
+        DAO.connect("jdbc:postgresql://127.0.0.1:5432/bank");
+        AccountPerformer ap = new AccountPerformer();
+        ap.transferMoney(3112201654L, 1001882543L, 100L);
+    }*/
 }

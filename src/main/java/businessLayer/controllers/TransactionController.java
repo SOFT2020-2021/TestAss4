@@ -1,50 +1,25 @@
 package businessLayer.controllers;
 
 import contract.Contract;
-import contract.transferables.TransactionTransferable;
-import dataLayer.DAO;
-import dataLayer.performers.AccountPerformer;
+import contract.transferables.UserTransaction;
+import contract.transferables.UserTransactionsTransferable;
 import dataLayer.performers.TransactionPerformer;
 
 import java.util.List;
 
-public class TransactionController implements EntityController<TransactionTransferable> {
+public class TransactionController  {
 
-    public void createTransactionAndUpdateBalance (int sender, int retriever , long amount) throws Exception{
-        DAO.connect("jdbc:postgresql://192.168.1.137:5432/bank");
-        AccountPerformer test = new AccountPerformer();
-        TransactionPerformer test1 = new TransactionPerformer();
-        test1.createTransaction(sender,retriever,amount);
-        DAO.close();
+    public TransactionController(){ }
+
+    TransactionPerformer tp = new TransactionPerformer();
+
+    public void createTransactionAndUpdateBalance (long sender, long retriever , long amount) throws Exception{
+        tp.createTransaction(sender,retriever,amount);
     }
 
-    @Override
-    public Contract<TransactionTransferable> getOne() {
-        return null;
-    }
-
-    @Override
-    public List<Contract<TransactionTransferable>> getMany() {
-        return null;
-    }
-
-    @Override
-    public boolean deleteOne() {
-        return false;
-    }
-
-    @Override
-    public boolean deleteMany() {
-        return false;
-    }
-
-    @Override
-    public boolean persist() {
-        return false;
-    }
-
-    @Override
-    public boolean update() {
-        return false;
+    public String getTransactionByAccountId(int accountId) throws Exception {
+        List<UserTransaction> userTransactions = tp.getTransactionByAccountId(accountId);
+        Contract<UserTransactionsTransferable> uttContract = new UserTransactionsTransferable(userTransactions);
+        return uttContract.toJSON();
     }
 }

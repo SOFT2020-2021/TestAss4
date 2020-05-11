@@ -2,10 +2,8 @@ package dataLayer.performers;
 
 import dataLayer.DAO;
 import dataLayer.entitites.User;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,29 +59,22 @@ public class CustomersPerformer {
         }
     }
 
-
     public List<String> getAllCustomersID () {
-        List<String> custID = new ArrayList<String>();
-
-        //PreparedStatement ps = DAO.connection.prepareStatement("SELECT id FROM users ;");
+        List<String> customerIds = new ArrayList<String>();
         try {
             PreparedStatement ps = DAO.connection.prepareStatement("SELECT cpr FROM customers ;");
             ResultSet rs = ps.executeQuery();
             int x = 0;
             while(rs.next()){
-                custID.add(rs.getString(1)) ;
-                //user = new User(Integer.parseInt(rs.getString(1)), rs.getString(2));
+                customerIds.add(rs.getString(1)) ;
             }
             rs.close();
             ps.close();
         }
-        catch(Exception E)
-        {
+        catch(Exception E) {
             System.out.println(E.getMessage());
         }
 
-        //
-
-        return custID;
+        return customerIds;
     }
 }
