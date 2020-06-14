@@ -48,7 +48,7 @@ public class AccountPerformer {
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
-                acc = new Account(null, null, rs.getInt(1));
+                acc = new Account(null, null, rs.getString(1));
                 acc.setBalance(rs.getInt(2)) ;
             }
         } catch (Exception e) {
@@ -67,25 +67,24 @@ public class AccountPerformer {
         }
     }
 
-    public void persist(int balance, int cpr, int cvr) {
+    public void persist(int balance, String cpr, String cvr) {
         try {
-            PreparedStatement ps = DAO.connection.prepareStatement("INSERT INTO accounts(balance, customerCpr, bankCvr) VALUES(?,?,?) ;");
+            PreparedStatement ps = DAO.connection.prepareStatement("INSERT INTO accounts(balance, user_cpr, bank_cvr) VALUES(?,?,?) ;");
             ps.setInt(1, balance);
-            ps.setInt(2, cpr);
-            ps.setInt(3, cvr);
+            ps.setString(2, cpr);
+            ps.setString(3, cvr);
             ps.executeUpdate();
-            ps.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
 
-    public void update(int id, int balance, int cpr, int cvr) {
+    public void update(int id, int balance, String cpr, String cvr) {
         try {
             PreparedStatement ps = DAO.connection.prepareStatement("UPDATE accounts SET balance=?, cpr=?, cvr=? WHERE id=?;");
             ps.setInt(1, balance);
-            ps.setInt(2, cpr);
-            ps.setInt(3, cvr);
+            ps.setString(2, cpr);
+            ps.setString(3, cvr);
             ps.setInt(4, id);
             ps.executeUpdate();
         } catch (Exception e) {
@@ -93,10 +92,10 @@ public class AccountPerformer {
         }
     }
 
-    public List<SimpleAccountTransferable> getAllAccountsForCustomer (String customer) throws Exception{
+    public List<SimpleAccountTransferable> getAllAccountsForUser (String user) throws Exception{
         List<SimpleAccountTransferable> accounts = new ArrayList<SimpleAccountTransferable>();
-        PreparedStatement ps = DAO.connection.prepareStatement("SELECT * FROM accounts where customerCpr = ? ;");
-        ps.setString(1, customer);
+        PreparedStatement ps = DAO.connection.prepareStatement("SELECT * FROM accounts where user_cpr = ? ;");
+        ps.setString(1, user);
         ResultSet rs = ps.executeQuery();
         int x = 0;
         while(rs.next()){

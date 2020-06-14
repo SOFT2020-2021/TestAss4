@@ -1,5 +1,6 @@
 package businessLayer;
 
+import dataLayer.entitites.User;
 import exceptions.AccountNotFoundException;
 import dataLayer.entitites.Account;
 import dataLayer.entitites.MyBank;
@@ -16,20 +17,20 @@ import static org.mockito.Mockito.*;
 public class AccountTest {
 
     MyBank bank;
-    Customer customer;
-    Integer accountNumber;
+    User user;
+    String accountNumber;
     Account account;
     Account target;
 
     @Before
     public void setup(){
         bank = mock(MyBank.class);
-        customer = mock(Customer.class);
-        accountNumber = 12345;
-        Integer targetNumber = 12345;
-        account = new Account(bank, customer, accountNumber);
-        target = new Account(bank, customer, targetNumber);
-        HashMap<Integer, Account> accounts = new HashMap<>();
+        user = mock(User.class);
+        accountNumber = "12345";
+        String targetNumber = "12345";
+        account = new Account(bank, user, accountNumber);
+        target = new Account(bank, user, targetNumber);
+        HashMap<String, Account> accounts = new HashMap<>();
         accounts.put(accountNumber,account);
         accounts.put(targetNumber, target);
         bank.setBankAccounts(accounts);
@@ -38,7 +39,7 @@ public class AccountTest {
     @After
     public void teardown(){
         bank = null;
-        customer = null;
+        user = null;
         accountNumber = null;
         account = null;
         target = null;
@@ -75,7 +76,7 @@ public class AccountTest {
             account.transfer(100, 1873123632);
         });*/
 
-        when(bank.getAccount(anyInt())).thenReturn(target);
+        when(bank.getAccount(anyString())).thenReturn(target);
         try {
             account.transfer(10000, target.getNumber());
             assertEquals(targetTransactionsSizeBefore + 1, target.getTransactions().size());

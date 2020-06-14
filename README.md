@@ -63,7 +63,7 @@ Below is our exported tests.
 			"response": []
 		},
 		{
-			"name": "Get Customers list",
+			"name": "Get Users list",
 			"event": [
 				{
 					"listen": "test",

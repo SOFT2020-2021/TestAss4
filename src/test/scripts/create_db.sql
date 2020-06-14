@@ -1,8 +1,8 @@
-    drop database if exists bank;
-    create database bank;
-    \c bank;
+    drop database if exists testbank;
+    create database testbank;
+    \c testbank;
 
-    create table customers (
+    create table users (
         cpr VARCHAR(10) PRIMARY KEY,
         name VARCHAR(100) NOT NULL
     );
@@ -15,19 +15,19 @@
     CREATE TABLE accounts (
         id SERIAL PRIMARY KEY,
         balance INT DEFAULT 0,
-        customerCpr VARCHAR(10) references customers (cpr) NOT NULL,
-        bankCvr VARCHAR(25) references banks (cvr) NOT NULL
+        user_cpr VARCHAR(10) references users (cpr) NOT NULL,
+        bank_cvr VARCHAR(25) references banks (cvr) NOT NULL
     );
 
     CREATE TABLE transactions(
         id SERIAL PRIMARY KEY,
-        retriever INT references accounts (id) NOT NULL,
-        giver     INT references accounts (id) NOT NULL,
+        retriever INT references accounts (id) ON DELETE SET NULL,
+        giver     INT references accounts (id) ON DELETE SET NULL,
         timestamp timestamp default current_timestamp,
         amount    INT NOT NULL
     );
 
-    INSERT INTO customers(cpr, name)
+    INSERT INTO users(cpr, name)
     VALUES
         ('2102152020', 'Jonas'),
         ('3105071331', 'Alex'),
@@ -38,7 +38,7 @@
     VALUES
            ('DK-CVR-36729929', 'Gold bank');
 
-    INSERT INTO accounts (balance, customerCpr, bankCvr)
+    INSERT INTO accounts (balance, user_cpr, bank_cvr)
     VALUES
            (1000, '2102152020', 'DK-CVR-36729929'),
            (2500, '2102152020', 'DK-CVR-36729929'),

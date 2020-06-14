@@ -16,7 +16,7 @@ public class TransactionTest {
 
         long amount =1000L;
         long timestamp = 10000L;
-        var acc = new Account(mock(MyBank.class), mock(User.class), 112);
+        var acc = new Account(mock(MyBank.class), mock(User.class), "112");
 
         Transaction movementTest = new Transaction(acc, amount, timestamp);
 

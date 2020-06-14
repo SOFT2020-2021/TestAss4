@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomersPerformer {
+public class UserPerformer {
 
     public User get(String cpr) {
         User user = null;
@@ -16,7 +16,7 @@ public class CustomersPerformer {
             ps.setString(1, cpr);
             ResultSet rs = ps.executeQuery();
             if(rs.next()){
-                user = new User(Integer.parseInt(rs.getString(1)), rs.getString(2));
+                user = new User(rs.getString(1), rs.getString(2));
             }
             rs.close();
             ps.close();
@@ -26,20 +26,20 @@ public class CustomersPerformer {
         return user;
     }
 
-    public void delete(int cpr) {
+    public void delete(String cpr) {
         try {
             PreparedStatement ps = DAO.connection.prepareStatement("DELETE FROM users WHERE cpr = ?;");
-            ps.setInt(1, cpr);
+            ps.setString(1, cpr);
             ps.executeUpdate();
         } catch(Exception e){
             System.out.println(e.getMessage());
         }
     }
 
-    public void persist(int cpr, String name) {
+    public void persist(String cpr, String name) {
         try {
             PreparedStatement ps = DAO.connection.prepareStatement("INSERT INTO users(cpr,name) VALUES(?, ?);");
-            ps.setInt(1, cpr);
+            ps.setString(1, cpr);
             ps.setString(2, name);
             ps.executeUpdate();
         } catch (Exception e){
@@ -47,26 +47,26 @@ public class CustomersPerformer {
         }
     }
 
-    public void update(int oldCpr, int cpr, String name) {
+    public void update(String oldCpr, String cpr, String name) {
         try {
             PreparedStatement ps = DAO.connection.prepareStatement("UPDATE users SET cpr=?, name=? WHERE cpr=?");
-            ps.setInt(1, cpr);
+            ps.setString(1, cpr);
             ps.setString(2, name);
-            ps.setInt(3, oldCpr);
+            ps.setString(3, oldCpr);
             ps.executeUpdate();
         } catch(Exception e){
             System.out.println(e.getMessage());
         }
     }
 
-    public List<String> getAllCustomersID () {
-        List<String> customerIds = new ArrayList<String>();
+    public List<String> getAllUserIds () {
+        List<String> userIds = new ArrayList<String>();
         try {
-            PreparedStatement ps = DAO.connection.prepareStatement("SELECT cpr FROM customers ;");
+            PreparedStatement ps = DAO.connection.prepareStatement("SELECT cpr FROM users ;");
             ResultSet rs = ps.executeQuery();
             int x = 0;
             while(rs.next()){
-                customerIds.add(rs.getString(1)) ;
+                userIds.add(rs.getString(1)) ;
             }
             rs.close();
             ps.close();
@@ -75,6 +75,6 @@ public class CustomersPerformer {
             System.out.println(E.getMessage());
         }
 
-        return customerIds;
+        return userIds;
     }
 }

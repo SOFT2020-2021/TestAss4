@@ -1,23 +1,22 @@
 package dataLayer.entitites;
 
 import businessLayer.Bank;
-import businessLayer.Customer;
 
 import java.util.Map;
 
 public class MyBank extends Transferable implements Bank {
 
-    private int cvr;
+    private String cvr;
     private String name;
-    private Map<Integer, Account> bankAccounts;
+    private Map<String, Account> bankAccounts;
 
-    public MyBank(int cvr, String name, Map<Integer, Account> bankAccounts) {
+    public MyBank(String cvr, String name, Map<String, Account> bankAccounts) {
         this.cvr = cvr;
         this.name = name;
         this.bankAccounts = bankAccounts;
     }
 
-    public void setCvr(int cvr) {
+    public void setCvr(String cvr) {
         this.cvr = cvr;
     }
 
@@ -25,33 +24,33 @@ public class MyBank extends Transferable implements Bank {
         this.name = name;
     }
 
-    public Map<Integer, Account> getBankAccounts() {
+    public Map<String, Account> getBankAccounts() {
         return bankAccounts;
     }
 
-    public void setBankAccounts(Map<Integer, Account> bankAccounts) {
+    public void setBankAccounts(Map<String, Account> bankAccounts) {
         this.bankAccounts = bankAccounts;
     }
 
     @Override
-    public Account getAccount(int number) {
+    public Account getAccount(String number) {
         return bankAccounts.get(number);
     }
 
     @Override
     public void registerAccount(Account account) {
-        bankAccounts.put(account.getCustomer().getCprNumber(), account);
+        bankAccounts.put(account.getUser().getCprNumber(), account);
     }
 
     @Override
-    public Customer getCustomer(int number) {
-        return bankAccounts.get(number).getCustomer();
+    public User getUser(String number) {
+        return bankAccounts.get(number).getUser();
     }
 
     @Override
-    public void registerCustomer(Customer customer) {
-        Account acc = new Account(this, customer, customer.getCprNumber());
-        bankAccounts.put(customer.getCprNumber(), acc);
+    public void registerUser(User user) {
+        Account acc = new Account(this, user, user.getCprNumber());
+        bankAccounts.put(user.getCprNumber(), acc);
     }
 
     @Override
@@ -60,7 +59,7 @@ public class MyBank extends Transferable implements Bank {
     }
 
     @Override
-    public int getCvr() {
+    public String getCvr() {
         return this.cvr;
     }
 

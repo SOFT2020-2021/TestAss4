@@ -1,18 +1,18 @@
 package dataLayer.entitites;
 
-import businessLayer.Customer;
+import businessLayer.BankUser;
 
-public class User extends Transferable implements Customer {
+public class User extends Transferable implements BankUser {
 
-    private int cpr;
+    private String cpr;
     private String name;
 
-    public User(int cpr, String name) {
+    public User(String cpr, String name) {
         this.cpr = cpr;
         this.name = name;
     }
 
-    public void setCpr(int cpr) {
+    public void setCpr(String cpr) {
         this.cpr = cpr;
     }
 
@@ -32,7 +32,7 @@ public class User extends Transferable implements Customer {
     }
 
     @Override
-    public int getCprNumber() {
+    public String getCprNumber() {
         return this.cpr;
     }
 

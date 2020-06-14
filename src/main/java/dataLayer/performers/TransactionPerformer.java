@@ -23,12 +23,12 @@ public class TransactionPerformer {
 
     public List<UserTransaction> getTransactionByAccountId(int accountId) throws Exception {
         PreparedStatement ps = DAO.connection.prepareStatement(
-                "SELECT cr.name as retriever_customer, cg.name as giver_customer, t.timestamp, t.amount \n" +
+                "SELECT cr.name as retriever_user, cg.name as giver_customer, t.timestamp, t.amount \n" +
                     "FROM transactions t                                                                    \n" +
                     "JOIN accounts ar on ar.id = t.retriever                                                \n" +
                     "JOIN accounts ag on ag.id = t.giver                                                    \n" +
-                    "JOIN customers cr on cr.cpr = ar.customercpr                                           \n" +
-                    "JOIN customers cg on cg.cpr = ag.customercpr                                           \n" +
+                    "JOIN users cr on cr.cpr = ar.user_cpr                                           \n" +
+                    "JOIN users cg on cg.cpr = ag.user_cpr                                          \n" +
                     "WHERE t.retriever = ? OR t.giver = ?                                                   \n" +
                     "ORDER BY t.timestamp;"
         );

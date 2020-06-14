@@ -7,189 +7,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e113e18-6cac-4e9c-bd9c-27d30b43a86e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TestAss4_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/TestAssignmentContract_1_1_SNAPSHOT_all.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/contract_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/resourceLayer/CORSFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/resourceLayer/Transactions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/Startup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scripts/createDatabase.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scripts/createTestDatabase.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/resourceLayer/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/util/FileToString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scripts/clean_test_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TestAss4_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/TestAss4_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8133e7a6-aa50-4683-b3c9-dce116068ee6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8133e7a6-aa50-4683-b3c9-dce116068ee6/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8133e7a6-aa50-4683-b3c9-dce116068ee6/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8133e7a6-aa50-4683-b3c9-dce116068ee6/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8133e7a6-aa50-4683-b3c9-dce116068ee6/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/TestAssignmentContract-1.0-SNAPSHOT-all.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/TestAssignmentContract-1.2-SNAPSHOT-all.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exceptions/AccountNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/AccountNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ResourceLayer/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resourceLayer/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ResourceLayer/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resourceLayer/Customers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ResourceLayer/Transactions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/TestAssignmentContract-1.2-SNAPSHOT-all.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/TestAssignmentContract-1.5-SNAPSHOT-all.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/businessLayer/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/businessLayer/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/businessLayer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/businessLayer/BankUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/BankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/BankController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/EntityController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/businessLayer/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dataLayer/entitites/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataLayer/entitites/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataLayer/entitites/MyBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataLayer/entitites/MyBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataLayer/entitites/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataLayer/entitites/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dataLayer/performers/AccountPerformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataLayer/performers/AccountPerformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataLayer/performers/CustomersPerformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataLayer/performers/CustomersPerformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataLayer/performers/BankPerformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataLayer/performers/BankPerformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataLayer/performers/CustomersPerformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataLayer/performers/UserPerformer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dataLayer/performers/TransactionPerformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataLayer/performers/TransactionPerformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resourceLayer/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resourceLayer/Accounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resourceLayer/Customers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/Startup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/businessLayer/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/businessLayer/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scripts/create database.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/Bank/Accounts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/Bank/Customers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/Bank/MyResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/Bank/Transactions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/Exceptions/AccountNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/META-INF/BankAppTest.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/businessLayer/Bank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/businessLayer/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/businessLayer/controllers/AccountController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/businessLayer/controllers/BankController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/businessLayer/controllers/CustomerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/businessLayer/controllers/EntityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/businessLayer/controllers/TransactionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/DAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/entitites/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/entitites/MyBank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/entitites/Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/entitites/Transferable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/entitites/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/performers/AccountPerformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/performers/BankPerformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/performers/CustomersPerformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/dataLayer/performers/TransactionPerformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/TestAssignmentContract-1.0-SNAPSHOT-all.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/aopalliance-repackaged-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/hk2-api-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/hk2-locator-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/hk2-utils-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jakarta.activation-2.0.0-RC3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jakarta.activation-api-2.0.0-RC3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jakarta.inject-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jakarta.validation-api-2.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jakarta.ws.rs-api-3.0.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jakarta.xml.bind-api-3.0.0-RC2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/javassist-3.25.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jersey-client-3.0.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jersey-common-3.0.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jersey-container-servlet-core-3.0.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jersey-hk2-3.0.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jersey-media-jaxb-3.0.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/jersey-server-3.0.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/osgi-resource-locator-1.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/lib/postgresql-42.2.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAppTest/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bank/Accounts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bank/Customers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bank/MyResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bank/Transactions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Exceptions/AccountNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BankAppTest.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/businessLayer/Bank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/businessLayer/MyBankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/businessLayer/MyBankTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/businessLayer/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/businessLayer/TransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/datalayer/AccountPerformerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/datalayer/AccountPerformerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/datalayer/BankPerformerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/datalayer/BankPerformerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/datalayer/UserPerformerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/datalayer/UserPerformerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/datalayer/createTestBank.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/datalayer/dropTestBank.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/json/JsonSerilizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scripts/createDatabase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scripts/create_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scripts/createTestDatabase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scripts/create_tables_and_populate.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/servlets/Startup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BankAppTest/WEB-INF/classes/servlets/Startup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Accounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Customers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/TestAss4.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/businessLayer/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/businessLayer/Bank.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/businessLayer/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/businessLayer/controllers/AccountController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/businessLayer/controllers/BankController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/businessLayer/controllers/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/businessLayer/controllers/AccountController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/businessLayer/controllers/CustomerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/businessLayer/controllers/EntityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/businessLayer/controllers/TransactionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/DAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/entitites/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/entitites/MyBank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/entitites/Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/entitites/Transferable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/entitites/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/performers/AccountPerformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/performers/BankPerformer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/entitites/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataLayer/entitites/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/entitites/MyBank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataLayer/entitites/MyBank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/entitites/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataLayer/entitites/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/performers/AccountPerformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataLayer/performers/AccountPerformer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/performers/BankPerformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataLayer/performers/BankPerformer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/performers/CustomersPerformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/performers/TransactionPerformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/businessLayer/AccountTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/businessLayer/MyBankTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/businessLayer/TransactionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/datalayer/AccountPerformerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/datalayer/BankPerformerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/datalayer/TransactionPerformerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/datalayer/UserPerformerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataLayer/performers/TransactionPerformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataLayer/performers/TransactionPerformer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resourceLayer/Accounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resourceLayer/Accounts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resourceLayer/Customers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlets/Startup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/Startup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/businessLayer/AccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/businessLayer/AccountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/businessLayer/MyBankTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/businessLayer/MyBankTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/businessLayer/TransactionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/businessLayer/TransactionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/datalayer/AccountPerformerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/datalayer/AccountPerformerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/datalayer/BankPerformerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/datalayer/BankPerformerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/datalayer/UserPerformerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/datalayer/UserPerformerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/json/JsonSerilizer.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@192.168.1.137" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@192.168.1.137" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@192.168.1.137" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@192.168.1.137" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@192.168.1.137" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@192.168.1.137" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
-        <item name="access methods" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@192.168.1.137" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
-        <item name="extensions" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@192.168.1.137" type="feb32156:DbDataSourceImpl" />
-        <item name="roles" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -229,7 +116,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestAssignmentContract" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bank-contract" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -237,7 +124,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28318584" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -253,47 +140,15 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/libs" />
+      <recent name="$PROJECT_DIR$/src/test/scripts" />
       <recent name="$PROJECT_DIR$/src/main/java/ResourceLayer" />
       <recent name="$PROJECT_DIR$/src/main/Resources" />
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.34">
-    <configuration name="AccountPerformer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dataLayer.performers.AccountPerformer" />
-      <module name="TestAss4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dataLayer.performers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransactionPerformer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dataLayer.performers.TransactionPerformer" />
-      <module name="TestAss4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dataLayer.performers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
-      <module name="BankAppTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in TestAss4">
     <configuration name="AccountPerformerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BankAppTest" />
+      <module name="TestAss4" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="datalayer.*" />
@@ -303,6 +158,58 @@
       <option name="PACKAGE_NAME" value="datalayer" />
       <option name="MAIN_CLASS_NAME" value="datalayer.AccountPerformerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in TestAss4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestAss4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankPerformerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestAss4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datalayer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datalayer" />
+      <option name="MAIN_CLASS_NAME" value="datalayer.BankPerformerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserPerformerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestAss4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datalayer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datalayer" />
+      <option name="MAIN_CLASS_NAME" value="datalayer.UserPerformerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="datalayer in TestAss4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestAss4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datalayer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datalayer" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -454,17 +361,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.main" />
-      <item itemvalue="Application.TransactionPerformer" />
+      <item itemvalue="JUnit.All in TestAss4" />
       <item itemvalue="JUnit.AccountPerformerTest" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.34" />
-      <item itemvalue="Application.AccountPerformer" />
+      <item itemvalue="JUnit.BankPerformerTest" />
+      <item itemvalue="JUnit.UserPerformerTest" />
+      <item itemvalue="JUnit.datalayer in TestAss4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AccountPerformer" />
-        <item itemvalue="Application.TransactionPerformer" />
-        <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.All in TestAss4" />
+        <item itemvalue="JUnit.datalayer in TestAss4" />
+        <item itemvalue="JUnit.UserPerformerTest" />
+        <item itemvalue="JUnit.BankPerformerTest" />
         <item itemvalue="JUnit.AccountPerformerTest" />
       </list>
     </recent_temporary>
@@ -494,6 +403,9 @@
       <workItem from="1589117987978" duration="620000" />
       <workItem from="1589181434970" duration="1732000" />
       <workItem from="1589183265875" duration="10353000" />
+      <workItem from="1592053736534" duration="4795000" />
+      <workItem from="1592118326059" duration="4749000" />
+      <workItem from="1592123556466" duration="5425000" />
     </task>
     <servers />
   </component>
@@ -515,21 +427,30 @@
     <state x="872" y="361" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1588699625530" />
     <state x="698" y="235" width="1024" height="845" key="#Project_Structure/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589024128445" />
     <state x="698" y="235" width="1024" height="845" key="#Project_Structure/67.27.1853.1053@67.27.1853.1053" timestamp="1589038460001" />
-    <state x="554" y="147" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589038915436">
+    <state x="554" y="147" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592067436874">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="734" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588699938959" />
     <state x="2470" y="276" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588888914340" />
-    <state x="554" y="147" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589034049983" />
+    <state x="554" y="147" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592067436874" />
     <state x="554" y="147" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1589038915436" />
-    <state x="1085" y="409" key="#com.intellij.ide.util.MemberChooser" timestamp="1588691128853">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="2734" y="316" width="374" height="585" key="#com.intellij.ide.util.MemberChooser" timestamp="1592121237962">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1085" y="409" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1588691128853" />
+    <state x="2734" y="316" width="374" height="585" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592121237962" />
+    <state x="804" y="170" width="573" height="638" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1592067355014">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="804" y="170" width="573" height="638" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592067355014" />
     <state x="719" y="430" width="444" height="182" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1589037006135">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="719" y="430" width="444" height="182" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1589037006135" />
+    <state x="2469" y="0" width="802" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592127997125">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2469" y="0" width="802" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592127997125" />
     <state x="943" y="371" width="524" height="484" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1589186364297">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -543,115 +464,118 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2020" y="98" width="1720" height="882" key="DiffContextDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588888879294" />
-    <state x="834" y="371" width="735" height="513" key="FileChooserDialogImpl" timestamp="1589186053700">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="2715" y="353" width="424" height="484" key="FileChooserDialogImpl" timestamp="1592128433694">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1060" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1588677794732" />
-    <state x="834" y="371" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589016438264" />
+    <state x="2715" y="353" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592128433694" />
+    <state x="834" y="371" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592054591221" />
     <state x="834" y="371" width="735" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1589186053700" />
-    <state width="1521" height="299" key="GridCell.Tab.0.bottom" timestamp="1589192630758">
+    <state width="1807" height="384" key="GridCell.Tab.0.bottom" timestamp="1592132499847">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267575" />
-    <state width="1291" height="285" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002749" />
-    <state width="1521" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365355" />
+    <state width="1874" height="396" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592122632896" />
+    <state width="1807" height="384" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592132499847" />
     <state width="1521" height="299" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630758" />
-    <state width="1521" height="299" key="GridCell.Tab.0.center" timestamp="1589192630757">
+    <state width="1807" height="384" key="GridCell.Tab.0.center" timestamp="1592132499847">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267575" />
-    <state width="1291" height="285" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002749" />
-    <state width="1521" height="273" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365355" />
+    <state width="1874" height="396" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592122632896" />
+    <state width="1807" height="384" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592132499847" />
     <state width="1521" height="299" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630757" />
-    <state width="1521" height="299" key="GridCell.Tab.0.left" timestamp="1589192630757">
+    <state width="1807" height="384" key="GridCell.Tab.0.left" timestamp="1592132499847">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267575" />
-    <state width="1291" height="285" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002749" />
-    <state width="1521" height="273" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365354" />
+    <state width="1874" height="396" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592122632896" />
+    <state width="1807" height="384" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592132499847" />
     <state width="1521" height="299" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630757" />
-    <state width="1521" height="299" key="GridCell.Tab.0.right" timestamp="1589192630758">
+    <state width="1807" height="384" key="GridCell.Tab.0.right" timestamp="1592132499847">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267575" />
-    <state width="1291" height="285" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002749" />
-    <state width="1521" height="273" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365355" />
+    <state width="1874" height="396" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592122632896" />
+    <state width="1807" height="384" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592132499847" />
     <state width="1521" height="299" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630758" />
-    <state width="1521" height="299" key="GridCell.Tab.1.bottom" timestamp="1589192630680">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1578" height="308" key="GridCell.Tab.1.bottom" timestamp="1592118446448">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267576" />
-    <state width="1291" height="285" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002749" />
-    <state width="1521" height="273" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365355" />
+    <state width="1578" height="308" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592118446448" />
+    <state width="1521" height="299" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592067637119" />
     <state width="1521" height="299" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630680" />
-    <state width="1521" height="299" key="GridCell.Tab.1.center" timestamp="1589192630678">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1578" height="308" key="GridCell.Tab.1.center" timestamp="1592118446448">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267576" />
-    <state width="1291" height="285" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002749" />
-    <state width="1521" height="273" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365355" />
+    <state width="1578" height="308" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592118446448" />
+    <state width="1521" height="299" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592067637119" />
     <state width="1521" height="299" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630678" />
-    <state width="1521" height="299" key="GridCell.Tab.1.left" timestamp="1589192630678">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1578" height="308" key="GridCell.Tab.1.left" timestamp="1592118446448">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267576" />
-    <state width="1291" height="285" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002749" />
-    <state width="1521" height="273" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365355" />
+    <state width="1578" height="308" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592118446448" />
+    <state width="1521" height="299" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592067637118" />
     <state width="1521" height="299" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630678" />
-    <state width="1521" height="299" key="GridCell.Tab.1.right" timestamp="1589192630679">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1578" height="308" key="GridCell.Tab.1.right" timestamp="1592118446448">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267576" />
-    <state width="1291" height="285" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002749" />
-    <state width="1521" height="273" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365355" />
+    <state width="1578" height="308" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592118446448" />
+    <state width="1521" height="299" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592067637119" />
     <state width="1521" height="299" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630679" />
-    <state width="1521" height="299" key="GridCell.Tab.2.bottom" timestamp="1589192630682">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1578" height="308" key="GridCell.Tab.2.bottom" timestamp="1592118446448">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267576" />
-    <state width="1291" height="285" key="GridCell.Tab.2.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002750" />
-    <state width="1521" height="273" key="GridCell.Tab.2.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365356" />
+    <state width="1578" height="308" key="GridCell.Tab.2.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592118446448" />
+    <state width="1521" height="299" key="GridCell.Tab.2.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592067637120" />
     <state width="1521" height="299" key="GridCell.Tab.2.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630682" />
-    <state width="1521" height="299" key="GridCell.Tab.2.center" timestamp="1589192630681">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1578" height="308" key="GridCell.Tab.2.center" timestamp="1592118446448">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267576" />
-    <state width="1291" height="285" key="GridCell.Tab.2.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002750" />
-    <state width="1521" height="273" key="GridCell.Tab.2.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365355" />
+    <state width="1578" height="308" key="GridCell.Tab.2.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592118446448" />
+    <state width="1521" height="299" key="GridCell.Tab.2.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592067637119" />
     <state width="1521" height="299" key="GridCell.Tab.2.center/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630681" />
-    <state width="1521" height="299" key="GridCell.Tab.2.left" timestamp="1589192630680">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1578" height="308" key="GridCell.Tab.2.left" timestamp="1592118446448">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267576" />
-    <state width="1291" height="285" key="GridCell.Tab.2.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002749" />
-    <state width="1521" height="273" key="GridCell.Tab.2.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365355" />
+    <state width="1578" height="308" key="GridCell.Tab.2.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592118446448" />
+    <state width="1521" height="299" key="GridCell.Tab.2.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592067637119" />
     <state width="1521" height="299" key="GridCell.Tab.2.left/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630680" />
-    <state width="1521" height="299" key="GridCell.Tab.2.right" timestamp="1589192630681">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1578" height="308" key="GridCell.Tab.2.right" timestamp="1592118446448">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1741" height="401" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588710267576" />
-    <state width="1291" height="285" key="GridCell.Tab.2.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588890002750" />
-    <state width="1521" height="273" key="GridCell.Tab.2.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035365355" />
+    <state width="1578" height="308" key="GridCell.Tab.2.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592118446448" />
+    <state width="1521" height="299" key="GridCell.Tab.2.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592067637120" />
     <state width="1521" height="299" key="GridCell.Tab.2.right/67.27.1853.1053@67.27.1853.1053" timestamp="1589192630681" />
     <state x="526" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1588717469959">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="526" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1588717469959" />
-    <state x="349" y="156" width="1024" height="845" key="SettingsEditor" timestamp="1589186379054">
+    <state x="349" y="156" width="1024" height="845" key="SettingsEditor" timestamp="1592054703204">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="760" y="277" width="1440" height="845" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1588677797514" />
     <state x="2490" y="213" width="1023" height="845" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588888892865" />
-    <state x="349" y="156" width="1195" height="730" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589026821909" />
+    <state x="349" y="156" width="1195" height="730" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592054703204" />
     <state x="349" y="156" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1589186379054" />
     <state x="560" y="153" width="857" height="799" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589051478006">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="560" y="153" width="857" height="799" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1589051478006" />
-    <state x="987" y="334" width="586" height="732" key="find.popup" timestamp="1588673903739">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="781" y="279" width="1044" height="551" key="find.popup" timestamp="1592129563247">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="987" y="334" width="586" height="732" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588673903739" />
+    <state x="2660" y="258" width="588" height="565" key="find.popup/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592128385970" />
+    <state x="781" y="279" width="1044" height="551" key="find.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1592129563247" />
     <state x="302" y="154" width="1372" height="796" key="new project wizard" timestamp="1588926621931">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -661,10 +585,11 @@
     </state>
     <state x="657" y="253" key="run.anything.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589035319278" />
     <state x="657" y="253" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1588718099990" />
-    <state x="750" y="264" width="672" height="510" key="search.everywhere.popup" timestamp="1589022556416">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="2628" y="243" width="697" height="524" key="search.everywhere.popup" timestamp="1592121837250">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588691815327" />
+    <state x="2628" y="243" width="697" height="524" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592121837250" />
     <state x="750" y="264" width="672" height="510" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589022556416" />
     <state x="750" y="264" width="672" height="510" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1588717887077" />
   </component>
@@ -673,8 +598,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dataLayer/performers/AccountPerformer.java</url>
-          <line>111</line>
+          <line>110</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/libs/TestAssignmentContract-1.2-SNAPSHOT-all.jar!/contract/transferables/SimpleAccountTransferable.class</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -34,8 +34,6 @@
           <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-utils:2.6.1" />
           <element id="library" level="project" name="Maven: org.javassist:javassist:3.25.0-GA" />
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.2.12" />
-          <element id="library" level="project" name="libs" />
-          <element id="library" level="project" name="contract-1.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

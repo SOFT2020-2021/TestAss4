@@ -4,22 +4,26 @@ import dataLayer.DAO;
 import dataLayer.entitites.Account;
 import dataLayer.performers.AccountPerformer;
 import dataLayer.performers.BankPerformer;
-import dataLayer.performers.CustomersPerformer;
+import dataLayer.performers.UserPerformer;
 import org.junit.*;
+import util.FileToString;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 public class AccountPerformerTest {
 
     AccountPerformer ap = new AccountPerformer();
-    CustomersPerformer up = new CustomersPerformer();
+    UserPerformer up = new UserPerformer();
     BankPerformer bp = new BankPerformer();
 
     @BeforeClass
     public static void setup() {
         try {
-            DAO.connect("jdbc:postgresql://192.168.1.137:5432/bank");
+            DAO.connect("jdbc:postgresql://127.0.0.1:5432/bank");
             Statement st = DAO.connection.createStatement();
 
             st.executeUpdate("DROP DATABASE IF EXISTS testbank;");
@@ -27,36 +31,18 @@ public class AccountPerformerTest {
 
             st.close();
             DAO.close();
-            DAO.connect("jdbc:postgresql://192.168.1.137:5432/testbank");
+            DAO.connect("jdbc:postgresql://127.0.0.1:5432/testbank");
+
+            String filePath = new File("").getAbsolutePath();
+            String extension = "/src/test/scripts/create_tables_and_populate.sql";
+            filePath += extension;
+            String createDbQuery = FileToString.read(Paths.get(filePath));
 
             st = DAO.connection.createStatement();
-            st.executeUpdate("CREATE TABLE users\n" +
-                    "(\n" +
-                    "    cpr  INT PRIMARY KEY,\n" +
-                    "    name VARCHAR(100) NOT NULL\n" +
-                    ");\n" +
-                    "\n" +
-                    "CREATE TABLE banks\n" +
-                    "(\n" +
-                    "    cvr  INT PRIMARY KEY,\n" +
-                    "    name VARCHAR(100) NOT NULL\n" +
-                    ");\n" +
-                    "\n" +
-                    "CREATE TABLE accounts\n" +
-                    "(\n" +
-                    "    id          SERIAL PRIMARY KEY,\n" +
-                    "    balance     INT,\n" +
-                    "    customerCpr INT references users (cpr) NOT NULL,\n" +
-                    "    bankCvr     INT references banks (cvr) NOT NULL\n" +
-                    ");\n" +
-                    "\n" +
-                    "CREATE TABLE transactions\n" +
-                    "(\n" +
-                    "    id        SERIAL PRIMARY KEY,\n" +
-                    "    retriever INT references accounts (id) NOT NULL,\n" +
-                    "    giver     INT references accounts (id) NOT NULL,\n" +
-                    "    amount    INT                          NOT NULL\n" +
-                    ");");
+            st.executeUpdate(createDbQuery);
+            st.close();
+            st = DAO.connection.createStatement();
+            st.executeUpdate("DELETE FROM accounts WHERE 1 = 1;");
             st.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -66,7 +52,7 @@ public class AccountPerformerTest {
     @AfterClass
     public static void teardown() throws SQLException {
         DAO.close();
-        DAO.connect("jdbc:postgresql://192.168.1.137:5432/bank");
+        DAO.connect("jdbc:postgresql://127.0.0.1:5432/bank");
         Statement st = DAO.connection.createStatement();
         st.executeUpdate("DROP DATABASE IF EXISTS testbank;");
         st.close();
@@ -75,30 +61,24 @@ public class AccountPerformerTest {
     }
 
     @After
-    public void afterTest() throws SQLException {
+    public void afterTest() throws SQLException, IOException {
         Statement statement = DAO.connection.createStatement();
-        statement.execute("DELETE FROM accounts WHERE 1=1;");
-        statement.execute("DELETE FROM users WHERE 1=1;");
-        statement.execute("DELETE FROM banks WHERE 1=1;");
+        String filePath = new File("").getAbsolutePath();
+        String extension = "/src/test/scripts/clean_test_db.sql";
+        filePath += extension;
+        String cleanTestDbQuery = FileToString.read(Paths.get(filePath));
+        statement.execute(cleanTestDbQuery);
+        statement.close();
     }
 
     @Test
     public void persistAndGetTest() {
-        up.persist(765, "Loltest");
-        bp.persist(567, "Loltest");
+        up.persist("765", "_");
+        bp.persist("567", "_");
         Assert.assertNull(ap.get(1));
-        ap.persist(100, 765, 567);
-        Account account = ap.get(1);
+        ap.persist(100, "765", "567");
+        //setup script populated db with 20 accounts
+        Account account = ap.get(21);
         Assert.assertEquals(account.getBalance(), 100);
-    }
-
-    @Test
-    public void updateTest() {
-
-    }
-
-    @Test
-    public void deleteTest() {
-
     }
 }

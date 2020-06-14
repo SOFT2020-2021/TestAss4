@@ -2,11 +2,11 @@ package businessLayer;
 
 import dataLayer.entitites.Account;
 
-public interface Customer {
+public interface BankUser {
 
     public boolean transfer(long money, Account account, Account target);
 
-    public int getCprNumber();
+    public String getCprNumber();
 
     public String getName();
 
