@@ -62,9 +62,8 @@ public class UserPerformer {
     public List<String> getAllUserIds () {
         List<String> userIds = new ArrayList<String>();
         try {
-            PreparedStatement ps = DAO.connection.prepareStatement("SELECT cpr FROM users ;");
+            PreparedStatement ps = DAO.connection.prepareStatement("SELECT cpr FROM users;");
             ResultSet rs = ps.executeQuery();
-            int x = 0;
             while(rs.next()){
                 userIds.add(rs.getString(1)) ;
             }
@@ -72,7 +71,7 @@ public class UserPerformer {
             ps.close();
         }
         catch(Exception E) {
-            System.out.println(E.getMessage());
+            E.printStackTrace();
         }
 
         return userIds;

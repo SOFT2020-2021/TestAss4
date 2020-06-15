@@ -1,21 +1,14 @@
 package servlets;
 
-
 import dataLayer.DAO;
-
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
 @SuppressWarnings("serial")
 public class Startup extends HttpServlet {
 
-        public void init() throws ServletException {
-            System.out.println("I AM RUNNING!");
+        public void init() {
             try {
-                //Alex DAO.connect("jdbc:postgresql://192.168.1.137:5432/bank");
-                DAO.connect("jdbc:postgresql://127.0.0.1:5432/testbank");
-                //DAO.connect("jdbc:postgresql://192.168.1.137:5432/testbank");
-
+                DAO.connect("jdbc:postgresql://127.0.0.1:5432/bank");
             } catch(Exception E){
                 System.out.println(E.getMessage());
                 System.exit(1);

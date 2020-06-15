@@ -1,6 +1,7 @@
-    drop database if exists testbank;
-    create database testbank;
     \c testbank;
+    drop database if exists bank;
+    create database bank;
+    \c bank;
 
     create table users (
         cpr VARCHAR(10) PRIMARY KEY,

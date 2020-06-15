@@ -17,7 +17,7 @@ public class Accounts {
     public Response getAccountByCpr(@PathParam("cpr") String cpr) {
         try {
             AccountController ac = new AccountController();
-            String accountsJSON  = ac.getAccountsByCustomerID(cpr);
+            String accountsJSON  = ac.getAccountsbyUserId(cpr);
             return Response.status(200).entity(accountsJSON).build();
         }
         catch(Exception E){
